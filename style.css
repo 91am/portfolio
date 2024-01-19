@@ -1,0 +1,232 @@
+:root {
+    --primary-color: #E4E4E4;
+    --secondary-color: #FFFFFF;
+    --accent-color: #494949;
+    --background-color: #000000;
+    --font-family-primary: 'Tektur condensed';
+    --font-family-secondary: 'Cutive Mono', monospace;
+    --font-family-tertiary: 'Roboto', monospace;
+    --h2-size: 12rem;
+    /*200px*/
+    --h3-size: 9.3rem;
+    /*150px*/
+    --h4-size: 3rem;
+    /*48px*/
+    --h5-size: 2rem;
+    /*32px*/
+    --paragraf-size: 1rem;
+    /*24px*/
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid pink;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 1200px;
+}
+
+header {
+    list-style: none;
+    font-family: var(--font-family-primary);
+    font-size: var(--h5-size);
+    font-weight: 300;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.hero {
+    height: 680px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.hero>span {
+    font-family: var(--font-family-tertiary);
+    font-size: var(--h4-size);
+    color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+}
+
+.desarrollo {
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.web {
+    position: absolute;
+    top: 230px;
+    left: 400px;
+    z-index: 1;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-family: var(--font-family-primary);
+    font-size: var(--h2-size);
+    font-weight: 900;
+}
+
+p {
+    color: var(--secondary-color);
+    font-family: var(--font-family-secondary);
+    font-size: var(--paragraf-size);
+    font-weight: 100;
+}
+
+.bio {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bio>h2 {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    align-self: flex-end;
+    line-height: 0;
+}
+
+.bio>img {
+    width: 540px;
+    height: 620px;
+}
+
+.about {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-download-cv{
+    all: unset;
+    margin-top: 40px;
+    padding: 8px;
+    width: 140px;
+    border-radius: 8px;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family-secondary);
+    font-size: var(--paragraf-size);
+    cursor: pointer;
+}
+
+/*AQUI EMPIEZA LA SECCION PROYECTOS*/
+
+.proyectos{
+    margin-top: 150px;
+    height: 700px;
+    border: 1px solid red;
+}
+
+.project-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.project-container p{
+    width: 600px;
+    margin-top: 45px;
+}
+
+.enlaces-proyectos li{
+    list-style: none;
+    position: relative;
+    display: flex;
+    color:var(--secondary-color);
+    font-family: var(--font-family-tertiary);
+    font-size: var(--h4-size); 
+    padding: 40px 0 40px 20px;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.enlaces-proyectos span{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    font-family: var(--font-family-primary);
+    font-size: var(--h3-size);
+    color: var(--accent-color);
+    line-height: 0;
+}
+
+.links-rrss li{
+    display: inline-block;    
+}
+.links-rrss img{
+    max-width: 40px;
+}
+
+/*AQUI EMPIEZA LA SECCION CONTACTOS*/
+
+footer{
+    margin-top: 150px;
+    height: 600px;
+    border: 1px solid greenyellow;
+}
+
+.contact{
+    position: relative;
+}
+
+.contact h2 {
+    position: absolute;
+    right: 0;
+    top: 400px;
+}
+
+.contact li{
+    list-style: none;
+    color: var(--secondary-color);
+    font-family: var(--font-family-secondary);
+    font-size: var(--paragraf-size);
+}
+
+.heart-8bit{
+    max-width: 300px;
+    position: absolute;
+    z-index: 1;
+    right: 25%;
+    top: 100px;
+    
+}
+.contact-rrss li{
+    display: inline-block;
+    bottom: 0;
+}
+
+.contact-section img{
+    max-width: 40px;
+}
+
+.contact-rrss img{
+    display: inline-block; 
+    max-width: 40px;
+}
+
+
