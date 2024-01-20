@@ -33,6 +33,12 @@ body {
 
 main {
     width: 1200px;
+    border: 3px solid var(--primary-color);
+    margin-top: 16px;
+}
+
+section {
+    padding: 40px 40px;
 }
 
 header {
@@ -43,7 +49,8 @@ header {
     color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    border-bottom: 3px solid var(--primary-color);
+    padding: 16px 32px;
 }
 
 nav ul {
@@ -56,7 +63,7 @@ nav ul {
 .hero {
     height: 680px;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
 }
 
 .hero>span {
@@ -70,13 +77,13 @@ nav ul {
 .desarrollo {
     display: flex;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .web {
     position: absolute;
-    top: 185px;
-    left: 380px;
+    top: 280px;
+    left: 400px;
     z-index: 1;
 }
 
@@ -98,19 +105,21 @@ p {
     display: flex;
     justify-content: space-between;
     position: relative;
+    border-top: 3px solid var(--primary-color);
+    padding-top: 70px;
 }
 
 .bio>h2 {
     position: absolute;
     z-index: 1;
-    right: 0;
+    right: 32px;
     align-self: flex-end;
     line-height: 0;
 }
 
 .bio>img {
-    width: 540px;
-    height: 620px;
+    width: 440px;
+    height: 500px;
 }
 
 .about {
@@ -136,8 +145,9 @@ p {
 /*AQUI EMPIEZA LA SECCION PROYECTOS*/
 
 .projects{
-    margin-top: 150px;
-    height: 700px;
+    margin-top: 120px;
+    height: 690px;
+    border-top: 3px solid var(--primary-color);
     /*border: 1px solid red;*/
 }
 
@@ -155,8 +165,8 @@ p {
 }
 
 .project-caption p{
-    width: 600px;
-    margin-top: 45px;
+    width: 500px;
+    margin-top: 30px;
 }
 
 .projects-links li{
@@ -182,12 +192,18 @@ p {
 }
 
 .projects-sm-links li{
-    display: inline-block; 
-    padding: 0 5px 0 0; 
+    display: inline-block;
+    margin-bottom: 16px; 
 }
+
 .projects-sm-links img{
     max-width: 40px;
 }
+
+.projects-sm-links-container p{
+    margin-bottom: 16px;
+}
+
 .projects-sm-links-container{
     align-self: flex-end;
 }
@@ -196,8 +212,10 @@ p {
 
 .contact{
     position: relative;
-    margin-top: 150px;
+    margin-top: 120px;
+    padding-top: 70px;
     height: 600px;
+    border-top: 3px solid var(--primary-color);
     /*border: 1px solid greenyellow;*/
 }
 
@@ -227,6 +245,7 @@ p {
     z-index: 1;
     right: 0;
     bottom: 0;
+    margin-right: 32px;
 }
 .contact-title-with-heart img{
     max-width: 300px;
@@ -235,7 +254,7 @@ p {
 }
 
 .contact-title-with-heart h2{
-    line-height: 0.7;
+    line-height: 1;
 }
 
 .sm-container{
@@ -248,11 +267,21 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 22px;
     
+}
+
+.white-line-contact{
+    width: 3px;
+    height: 280px;
+    background-color: var(--primary-color);
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 .sm-contact li{
     display: inline-block;
+    margin-bottom: 16px;
 }
 
 .sm-contact img{
