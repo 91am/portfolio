@@ -41,6 +41,10 @@ section {
     padding: 40px 40px;
 }
 
+header img {
+    display: none;
+}
+
 header {
     list-style: none;
     font-family: var(--font-family-primary);
@@ -129,7 +133,7 @@ p {
     justify-content: center;
 }
 
-.btn-download-cv{
+.btn-download-cv {
     all: unset;
     margin-top: 40px;
     padding: 8px;
@@ -144,44 +148,44 @@ p {
 
 /*AQUI EMPIEZA LA SECCION PROYECTOS*/
 
-.projects{
+.projects {
     margin-top: 120px;
     height: 690px;
     border-top: 3px solid var(--primary-color);
     /*border: 1px solid red;*/
 }
 
-.project-section{
+.project-section {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     margin-top: 40px;
 }
 
-.project-caption{
+.project-caption {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.project-caption p{
+.project-caption p {
     width: 500px;
     margin-top: 30px;
 }
 
-.projects-links li{
+.projects-links li {
     list-style: none;
     position: relative;
     display: flex;
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     font-family: var(--font-family-tertiary);
-    font-size: var(--h4-size); 
+    font-size: var(--h4-size);
     padding: 40px 0 40px 20px;
     cursor: pointer;
     text-decoration-line: underline;
 }
 
-.projects-links span{
+.projects-links span {
     position: absolute;
     z-index: -1;
     right: 0;
@@ -191,26 +195,26 @@ p {
     line-height: 0;
 }
 
-.projects-sm-links li{
+.projects-sm-links li {
     display: inline-block;
-    margin-bottom: 16px; 
-}
-
-.projects-sm-links img{
-    max-width: 40px;
-}
-
-.projects-sm-links-container p{
     margin-bottom: 16px;
 }
 
-.projects-sm-links-container{
+.projects-sm-links img {
+    max-width: 40px;
+}
+
+.projects-sm-links-container p {
+    margin-bottom: 16px;
+}
+
+.projects-sm-links-container {
     align-self: flex-end;
 }
 
 /*AQUI EMPIEZA LA SECCION CONTACTOS*/
 
-.contact{
+.contact {
     position: relative;
     margin-top: 120px;
     padding-top: 70px;
@@ -219,25 +223,25 @@ p {
     /*border: 1px solid greenyellow;*/
 }
 
-.contact-info{
+.contact-info {
     color: var(--secondary-color);
     font-family: var(--font-family-secondary);
     font-size: var(--paragraf-size);
 }
 
-.contact-info li{
-    list-style: none; 
+.contact-info li {
+    list-style: none;
     display: flex;
     align-items: center;
-    gap: 6px; 
+    gap: 6px;
     padding-bottom: 6px;
 }
 
-.contact-info img{
+.contact-info img {
     max-width: 30px;
 }
 
-.contact-title-with-heart{
+.contact-title-with-heart {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,31 +251,32 @@ p {
     bottom: 0;
     margin-right: 32px;
 }
-.contact-title-with-heart img{
+
+.contact-title-with-heart img {
     max-width: 300px;
     padding-bottom: 80px;
 
 }
 
-.contact-title-with-heart h2{
+.contact-title-with-heart h2 {
     line-height: 1;
 }
 
-.sm-container{
+.sm-container {
     display: flex;
     position: absolute;
     bottom: 0;
- }
+}
 
-.sm-contact{
+.sm-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 22px;
-    
+
 }
 
-.white-line-contact{
+.white-line-contact {
     width: 3px;
     height: 280px;
     background-color: var(--primary-color);
@@ -279,11 +284,159 @@ p {
     margin-left: 10px;
 }
 
-.sm-contact li{
+.sm-contact li {
     display: inline-block;
     margin-bottom: 16px;
 }
 
-.sm-contact img{
+.sm-contact img {
     max-width: 40px;
+}
+
+/*AQUI EMPIEZA EL RESPONSIVE DESIGN*/
+
+
+@media screen and (max-width: 1200px) {
+
+    :root {
+        --primary-color: #E4E4E4;
+        --secondary-color: #FFFFFF;
+        --accent-color: #494949;
+        --background-color: #000000;
+        --font-family-primary: 'Tektur condensed';
+        --font-family-secondary: 'Cutive Mono', monospace;
+        --font-family-tertiary: 'Roboto', monospace;
+        --h2-size: 4.375rem;
+        /*104px*/
+        --h3-size: 6rem;
+        /*96px*/
+        --h4-size: 2rem;
+        /*32px*/
+        --h5-size: 1.5rem;
+        /*24px*/
+        --paragraf-size: 0.875rem;
+        /*14px*/
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /*border: 1px solid pink;*/
+    }
+
+    main {
+        width: 380px;
+        border: 2px solid var(--primary-color);
+        margin-top: 16px;
+    }
+
+    section {
+        padding: 24px 24px;
+    }
+
+    header {
+        padding: 8px 24px;
+    }
+
+    header img {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .desarrollo {
+        position: relative;
+        width: 100%;
+        top: -45px;
+        margin: 0;
+    }
+
+    .web {
+        width: 47%;
+        position: absolute;
+        top: 305px;
+        left: 130px;
+        z-index: 1;
+    }
+
+    .hero>span {
+        left: 24px;
+        padding-bottom: 48px;
+        font-size: var(--h5-size);
+    }
+
+
+
+    /*AQUI EMPIEZA BIO RESPONSIVE*/
+
+    .bio {
+        height: 1000px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bio>h2 {
+        position: absolute;
+        z-index: 1;
+        left: 24px;
+        top: 75px;
+
+    }
+
+    .bio img {
+        position: relative;
+        width: 328px;
+        height: 370px;
+        bottom: -62px;
+    }
+
+    .about {
+        width: 328px;
+        padding-top: 75px;
+    }
+
+    .btn-download-cv {
+        margin-top: 24px;
+    }
+
+
+    /*AQUI EMPIEZA PROJECTS RESPONSIVE*/
+
+    .projects {
+        
+        display: flex;
+        flex-direction: column;
+        
+        margin: 0;
+    }
+
+    .project-caption p{
+        width: 328px;
+        padding: 0;
+    }
+
+    /*AQUI EMPIEZA CONTACT RESPONSIVE*/
+
+    .contact {
+        display: none;
+    }
+
 }
