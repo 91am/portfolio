@@ -306,14 +306,14 @@ p {
         --font-family-primary: 'Tektur condensed';
         --font-family-secondary: 'Cutive Mono', monospace;
         --font-family-tertiary: 'Roboto', monospace;
-        --h2-size: 4.375rem;
-        /*104px*/
+        --h2-size: 4rem;
+        /*64px*/
         --h3-size: 6rem;
         /*96px*/
         --h4-size: 2rem;
         /*32px*/
-        --h5-size: 1.5rem;
-        /*24px*/
+        --h5-size: 1.7rem;
+        /*27.2px*/
         --paragraf-size: 0.875rem;
         /*14px*/
     }
@@ -379,8 +379,6 @@ p {
         font-size: var(--h5-size);
     }
 
-
-
     /*AQUI EMPIEZA BIO RESPONSIVE*/
 
     .bio {
@@ -421,17 +419,50 @@ p {
     /*AQUI EMPIEZA PROJECTS RESPONSIVE*/
 
     .projects {
-        
-        display: flex;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .project-section{
         flex-direction: column;
-        
-        margin: 0;
+        align-items: left;
+        margin-top: 0;
     }
 
     .project-caption p{
-        width: 328px;
-        padding: 0;
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
     }
+
+    .projects-sm-links-container{
+        width: 100%;
+        padding-left: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .projects-sm-links img{
+        padding-left: 6px;
+    }
+
+    .projects-links{
+        margin-top: 20px;
+    }
+
+  .projects-links li {
+    width: 100%;
+    padding: 40px 0;
+    font-size: var(--h5-size);
+  }
+
+  .projects-links img{
+    width: 20px;
+    margin-left: 6px;
+    
+  }
+
 
     /*AQUI EMPIEZA CONTACT RESPONSIVE*/
 
