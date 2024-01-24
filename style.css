@@ -34,7 +34,7 @@ body {
 main {
     width: 1200px;
     border: 3px solid var(--primary-color);
-    margin-top: 16px;
+    margin-top: 24px;
 }
 
 section {
@@ -64,13 +64,13 @@ nav ul {
     width: 600px;
 }
 
-.hero {
+.hero-container {
     height: 680px;
     position: relative;
     margin-bottom: 110px;
 }
 
-.hero>span {
+.hero-container>span {
     font-family: var(--font-family-tertiary);
     font-size: var(--h4-size);
     color: var(--secondary-color);
@@ -81,7 +81,7 @@ nav ul {
 .desarrollo {
     display: flex;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 48px;
 }
 
 .web {
@@ -105,15 +105,18 @@ p {
     font-weight: 100;
 }
 
-.bio {
+/*AQUI EMPIEZA LA SECCION DE BIO*/
+
+.bio-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
     position: relative;
     border-top: 3px solid var(--primary-color);
-    padding-top: 70px;
+    padding-top: 40px;
+    gap: 48px;
 }
 
-.bio>h2 {
+.bio-container h2 {
     position: absolute;
     z-index: 1;
     right: 32px;
@@ -121,28 +124,28 @@ p {
     line-height: 0;
 }
 
-.bio>img {
+.bio-container img {
     width: 440px;
     height: 500px;
 }
 
-.about {
-    width: 600px;
+.about-caption {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 
 .btn-download-cv {
     all: unset;
-    margin-top: 40px;
     padding: 8px;
-    width: 140px;
+    width: 168px;
     border-radius: 8px;
     border: 2px solid var(--secondary-color);
     color: var(--secondary-color);
     font-family: var(--font-family-secondary);
     font-size: var(--paragraf-size);
+    text-align: center;
     cursor: pointer;
 }
 
@@ -150,42 +153,49 @@ p {
 
 .projects {
     margin-top: 120px;
-    height: 690px;
+    height: auto;
     border-top: 3px solid var(--primary-color);
-    /*border: 1px solid red;*/
 }
 
-.project-section {
+.projects-container {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 40px;
 }
 
 .project-caption {
+    width: 500px;
+    padding-top: 36px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
-.project-caption p {
-    width: 500px;
-    margin-top: 30px;
+.projects-professional-networking-container {
+    margin-top: 16px;
 }
 
-.projects-links li {
+.projects-professional-networking-container img {
+    max-width: 40px;
+    margin-top: 16px;
+}
+
+.projects-professional-networking-container li {
+    display: inline-block;
+}
+
+.projects-portfolio-links li {
     list-style: none;
     position: relative;
     display: flex;
     color: var(--secondary-color);
     font-family: var(--font-family-tertiary);
     font-size: var(--h4-size);
-    padding: 40px 0 40px 20px;
+    padding: 40px 0 40px 24px;
     cursor: pointer;
     text-decoration-line: underline;
 }
 
-.projects-links span {
+.projects-portfolio-links span {
     position: absolute;
     z-index: -1;
     right: 0;
@@ -193,23 +203,6 @@ p {
     font-size: var(--h3-size);
     color: var(--accent-color);
     line-height: 0;
-}
-
-.projects-sm-links li {
-    display: inline-block;
-    margin-bottom: 16px;
-}
-
-.projects-sm-links img {
-    max-width: 40px;
-}
-
-.projects-sm-links-container p {
-    margin-bottom: 16px;
-}
-
-.projects-sm-links-container {
-    align-self: flex-end;
 }
 
 /*AQUI EMPIEZA LA SECCION CONTACTOS*/
@@ -233,17 +226,17 @@ p {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding-bottom: 6px;
+    gap: 8px;
+    padding-bottom: 8px;
 }
 
 .contact-info img {
-    max-width: 30px;
+    max-width: 40px;
 }
 
 .contact-title-with-heart {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     position: absolute;
     z-index: 1;
@@ -259,40 +252,40 @@ p {
 }
 
 .contact-title-with-heart h2 {
-    line-height: 1;
+    line-height: 0.7;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
 }
 
-.sm-container {
+.contact-networking{
     display: flex;
     position: absolute;
-    bottom: 0;
-}
-
-.sm-contact {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 22px;
-
+    text-align: center;
+    bottom: 0;
 }
 
 .white-line-contact {
     width: 3px;
-    height: 280px;
+    height: 260px;
     background-color: var(--primary-color);
     margin-top: 30px;
     margin-left: 10px;
 }
 
-.sm-contact li {
+.contact-networking li {
     display: inline-block;
     margin-bottom: 16px;
 }
 
-.sm-contact img {
+.contact-networking img {
     max-width: 40px;
 }
 
+/*AQUI EMPIEZA EL RESPONSIVE DESIGN*/
+/*AQUI EMPIEZA EL RESPONSIVE DESIGN*/
+/*AQUI EMPIEZA EL RESPONSIVE DESIGN*/
 /*AQUI EMPIEZA EL RESPONSIVE DESIGN*/
 
 
@@ -322,13 +315,13 @@ p {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        /*border: 1px solid pink;*/
+        border: 1px solid pink;
     }
 
     main {
         width: 380px;
         border: 2px solid var(--primary-color);
-        margin-top: 16px;
+        margin: 16px 16px;
     }
 
     section {
@@ -349,7 +342,7 @@ p {
         display: none;
     }
 
-    .hero {
+    .hero-container {
         height: 700px;
         display: flex;
         flex-direction: column;
@@ -373,37 +366,38 @@ p {
         z-index: 1;
     }
 
-    .hero>span {
+    .hero-container>span {
         left: 24px;
         padding-bottom: 48px;
         font-size: var(--h5-size);
     }
 
     /*AQUI EMPIEZA BIO RESPONSIVE*/
+    /*AQUI EMPIEZA BIO RESPONSIVE*/
 
-    .bio {
-        height: 1000px;
+    .bio-container {
+        height: auto;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0;
-        padding: 0;
+        padding: 40px 24px;
     }
 
-    .bio>h2 {
-        position: absolute;
-        z-index: 1;
-        left: 24px;
-        top: 75px;
-
-    }
-
-    .bio img {
+    .bio-container h2 {
         position: relative;
-        width: 328px;
-        height: 370px;
-        bottom: -62px;
+        z-index: 1;
+        left: 0px;
+        align-self: flex-start;
+        line-height: 1;
+    }
+
+    .bio-container img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        
     }
 
     .about {
@@ -418,56 +412,161 @@ p {
 
     /*AQUI EMPIEZA PROJECTS RESPONSIVE*/
 
-    .projects {
-        height: auto;
-        margin-top: 60px;
-    }
+   
+.projects {
+    margin-top: 0;
+    height: auto;
+    border-top: 3px solid var(--primary-color);
+    padding-top: 40px 24px;
+}
 
-    .project-section{
-        flex-direction: column;
-        align-items: left;
-        margin-top: 0;
-    }
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-    .project-caption p{
-        width: 100%;
-        text-align: left;
-        margin-top: 20px;
-    }
-
-    .projects-sm-links-container{
-        width: 100%;
-        padding-left: 6px;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-    }
-
-    .projects-sm-links img{
-        padding-left: 6px;
-    }
-
-    .projects-links{
-        margin-top: 20px;
-    }
-
-  .projects-links li {
+.project-caption {
     width: 100%;
-    padding: 40px 0;
-    font-size: var(--h5-size);
-  }
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
 
-  .projects-links img{
-    width: 20px;
-    margin-left: 6px;
+.projects-professional-networking-container {
+    margin-top: 16px;
+}
+
+.projects-professional-networking-container img {
+    max-width: 40px;
+    margin-top: 16px;
+}
+
+.projects-professional-networking-container li {
+    display: inline-block;
     
-  }
+}
 
+.projects-portfolio-links li {
+    list-style: none;
+    position: relative;
+    display: flex;
+    color: var(--secondary-color);
+    font-family: var(--font-family-tertiary);
+    font-size: var(--h5-size);
+    padding: 40px 0;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.projects-portfolio-links img{
+    max-width: 24px;
+    margin-left: 4px;
+}
+
+.projects-portfolio-links span {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    font-family: var(--font-family-primary);
+    font-size: var(--h3-size);
+    color: var(--accent-color);
+    line-height: 0;
+}
 
     /*AQUI EMPIEZA CONTACT RESPONSIVE*/
 
-    .contact {
-        display: none;
-    }
+    
+.contact {
+    position: relative;
+    margin-top: 0px;
+    padding-top: 40px;
+    height: auto;
+    border-top: 3px solid var(--primary-color);
+    /*border: 1px solid greenyellow;*/
+}
+
+.contact-info {
+    position: relative;
+    color: var(--secondary-color);
+    font-family: var(--font-family-secondary);
+    font-size: var(--paragraf-size);
+    top: 100px;
+}
+
+.contact-info li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+.contact-info img {
+    max-width: 100%;
+}
+
+.contact-title-with-heart {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.contact-title-with-heart img {
+    position: relative;
+    max-width: 100%;
+    padding-bottom: 0;
+    top: 104px;
+}
+
+.contact-title-with-heart h2 {
+    line-height: 0.7;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    top: -176px;
+    width: 100%;
+}
+
+.contact-networking{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 0;
+}
+
+.white-line-contact {
+    visibility:hidden;
+    width: 3px;
+    height: 260px;
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+.contact-networking{
+    position: relative;
+    width: 100%;
+    bottom: 104px;
+}
+
+.contact-networking li {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.contact-networking img {
+    max-width: 40px;
+}
 
 }
