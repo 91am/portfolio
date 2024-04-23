@@ -30,6 +30,10 @@ body {
 main {
     width: 900px;
     margin-top: 24px;
+    
+    @media screen and (max-width:650px) {
+        width: 450px;
+    }
 }
 
 section {
@@ -100,9 +104,10 @@ h3 {
     gap: 48px;
     margin-top: 16px;
 
-    .bio-caption{
+    .bio-caption {
         display: flex;
         flex-direction: column;
+
     }
 
     .bio-container{
@@ -110,6 +115,10 @@ h3 {
         flex-direction: row;
         margin-top: 40px;
         gap: 48px;
+
+        @media screen and (max-width:650px) {
+         flex-direction: column;
+        }
     }
 
     .portrait-pic {
@@ -129,6 +138,14 @@ h3 {
     text-align: center;
     cursor: pointer;  
     margin-top: 24px;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        color: var(--primary-color);
+        border: 2px solid var(--accent-color);
+        background-color: var(--accent-color);
+        transform: scale(1.1);
+    }
 }
 
 h2{
@@ -153,6 +170,10 @@ h2{
     font-family: var(--font-family-secondary);
     gap: 48px;
     margin-top: 40px;
+    @media screen and (max-width:650px) {
+        flex-direction: column;
+        max-width: 300px;
+       }
 }
 
 .project-caption {
@@ -166,6 +187,7 @@ h2{
     display: inline-block;
     max-width: 40px;
     margin-top: 24px;
+    margin-right: 8px;
 }
 
 .social-media-links{
