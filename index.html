@@ -138,15 +138,16 @@
 
             <div class="contact-container">
 
-                <form action="">
-                    <label for="">What is your name?</label>
-                    <input type="text" name="" id="" placeholder="Name">
-                    <label for="">What is your last name?</label>
-                    <input type="text" name="" id="" placeholder="Last name">
-                    <label for="">What is your e-mail?</label>
-                    <input type="email" name="" id="" placeholder="E-mail">
-                    <label for="">How we can collaborate? </label>
-                    <input type="text" name="" id="message-box" placeholder="Write here your message">
+                <form action="https://formspree.io/f/xqkrwweg"
+                method="POST">
+                    <label for="name">What is your name?</label>
+                    <input type="text" name="name" id="" placeholder="Name">
+                    <label for="lastName">What is your last name?</label>
+                    <input type="text" name="lastName" id="" placeholder="Last name">
+                    <label for="email">What is your e-mail?</label>
+                    <input type="email" name="email" id="" placeholder="E-mail">
+                    <label for="message">How we can collaborate? </label>
+                    <textarea name="message" id="message-box" placeholder="Write here your message"></textarea>
 
                     <input type="submit" value="Send" id="btn-submit">
                 </form>

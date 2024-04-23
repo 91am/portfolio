@@ -380,12 +380,13 @@ form{
         min-width: unset;
        }
 
-    input{
+    input, textarea{
         border-radius: 8px;
         background-color: var(--background-color);
         border: 2px solid var(--tertiary-color);
         height: 26px;
         padding: 4px;
+        color: var(--secondary-color);
     }
 
     #message-box{
