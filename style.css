@@ -52,7 +52,6 @@ h2 {
     font-family: var(--font-family-primary);
     font-size: var(--h2-size);
     font-weight: 900;
-
 }
 
 h3 {
@@ -97,15 +96,16 @@ nav {
        }
 }
 
+/*HERE BEGINS HERO SECTION*/
 
-.hero-container {
+.hero {
     height: 680px;
     border: 2px solid var(--tertiary-color);
     padding: 8px; 
     margin-top: 16px;
 }
 
-/*AQUI EMPIEZA LA SECCION DE BIO*/
+/*HERE BEGINS BIO SECTION*/
 
 .bio {
   
@@ -114,6 +114,17 @@ nav {
     font-family: var(--font-family-secondary);
     gap: 48px;
     margin-top: 16px;
+
+    .title{
+        text-align: left;
+        width: 100%;
+
+        h2{
+            @media screen and (max-width:1080px) {
+                font-size: var(--h5-size)
+               }
+        }
+    }
 
     .bio-caption {
         display: flex;
@@ -148,7 +159,7 @@ nav {
 
 .btn-download-cv {
     all: unset;
-    padding: 8px;
+    padding: 4px;
     width: 150px;
     border-radius: 8px;
     border: 2px solid var(--secondary-color);
@@ -182,10 +193,15 @@ h2{
     border: 2px solid var(--tertiary-color);
     margin-top: 16px;
 
-    h2{
-        @media screen and (max-width:1080px) {
-            font-size: var(--h5-size)
-           }
+    .title{
+        text-align: left;
+        width: 100%;
+
+        h2{
+            @media screen and (max-width:1080px) {
+                font-size: var(--h5-size)
+               }
+        }
     }
 }
 
@@ -299,6 +315,7 @@ h2{
                }
         }
     }
+
     p{
         font-size: var(--paragraf-size);
         font-family: var(--font-family-secondary);
@@ -397,7 +414,7 @@ form{
     #btn-submit{
         all: unset;
         padding: 4px;
-        width: 190px;
+        width: 180px;
         border-radius: 8px;
         border: 2px solid var(--secondary-color);
         color: var(--secondary-color);
@@ -434,14 +451,12 @@ footer {
         font-size: var(--paragraf-size);
         color: var(--secondary-color);
       
-
         li {
             list-style: none;
             display: flex;
             gap: 8px;
             margin-bottom: 16px;
             
-
             img{
                 max-width: 24px;
             }
