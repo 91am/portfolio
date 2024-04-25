@@ -5,6 +5,7 @@
     --accent-color: #D5FD02;
     --font-family-primary: 'Tektur condensed';
     --font-family-secondary: 'Fira Mono', monospace;
+    
     --h2-size: 7.5rem;
     /*150px*/
     --h3-size: 4rem;
@@ -100,10 +101,20 @@ nav {
 /*HERE BEGINS HERO SECTION*/
 
 .hero {
-    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 2px solid var(--tertiary-color);
     padding: 8px; 
-    margin-top: 16px;
+    margin: 24px 0;
+}
+
+video{
+    padding: 24px 0;
+    filter: grayscale();
+    width: 100%;
+    margin-left: 0 60px;
 }
 
 /*HERE BEGINS BIO SECTION*/
