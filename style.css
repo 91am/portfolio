@@ -72,16 +72,17 @@ header {
     padding: 8px 40px; 
 }
 
-nav {
-
-    a {
+a {
     text-decoration: none;
     color: var(--secondary-color);
+    text-decoration: none;
 }
 
-    a:hover {
-	color: var(--accent-color);
+a:hover {
+    color: var(--accent-color);
 }
+
+nav {
 
     ul {
     list-style: none;

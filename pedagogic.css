@@ -79,16 +79,17 @@ header {
     padding: 8px 40px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
 nav {
-
-    a {
-        text-decoration: none;
-        color: var(--secondary-color);
-    }
-
-    a:hover {
-        color: var(--accent-color);
-    }
 
     ul {
         list-style: none;
