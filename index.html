@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portafolioAnaHerrera</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="hero.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,19 +25,19 @@
             </nav>
         </header>
         <section class="hero">
-            <div class="hero-container">
-                <h1>Welcome to my portfolio!</h1>
-            </div>
+            <h1>Welcome to my portfolio!</h1>
             <video autoplay loop muted>
                 <source src="hero-video.mp4" type="video/mp4">
-              </video>
+            </video>
+            <span>If you want to check the creative process I made for this portfolio, <a>click here</a></span>
         </section>
 
         <section class="bio" id="bio-section">
-            <h2 class="title">BIO.</h2>
+            <div class="title">
+                <h2>BIO.</h2>
+            </div>
             <div class="bio-container">
-                <img class="portrait-pic" src="imgs/portrait-ana.png"
-                    alt="ana-herrera-portrait-pic">
+                <img class="portrait-pic" src="imgs/portrait-ana.png" alt="ana-herrera-portrait-pic">
                 <div class="bio-caption">
                     <p>
                         I have a solid background in graphic design, digital illustration and audiovisual communication,
@@ -54,6 +53,9 @@
                         Each project is based on proper research to conceptualize ideas and develop accessible and
                         intuitive
                         experiences with user-centered methodologies.
+                        <br />
+                        <br />
+                        Lets work together
                     </p>
                     <div class="cv-container">
                         <a href="public/ANA HERRERA CV ENG 24.pdf" target="_blank" class="btn-download-cv">English CV
@@ -66,8 +68,8 @@
         </section>
 
         <section class="projects" id="projects-section">
-            <div>
-                <h2 class="title">PROJECTS.</h2>
+            <div class="title">
+                <h2>PROJECTS.</h2>
             </div>
 
             <div class="projects-container">
@@ -144,8 +146,7 @@
 
             <div class="contact-container">
 
-                <form action="https://formspree.io/f/xqkrwweg"
-                method="POST">
+                <form action="https://formspree.io/f/xqkrwweg" method="POST">
                     <label for="name">What is your name?</label>
                     <input type="text" name="name" id="" placeholder="Name">
                     <label for="lastName">What is your last name?</label>
