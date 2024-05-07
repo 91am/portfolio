@@ -15,6 +15,7 @@
      /*72px*/
     --paragraf-size: 1rem;
     /*16px*/
+    --xxs:  0.8rem;
 }
 
 * {
@@ -140,7 +141,7 @@ nav {
            }
 
         @media screen and (max-width:600px) {
-            font-size: 1.5rem;
+            font-size: 2rem;
             left: 32px;
             top: 32px;
            }
@@ -409,6 +410,7 @@ h2{
     flex-direction: column;
     border: 2px solid var(--tertiary-color);
     margin-top: 16px;
+    
 
     .title{
         text-align: left;
@@ -554,19 +556,18 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px 40px;
+    padding: 24px 16px;
     margin-top: 16px;
-    margin-bottom: 16px;
     border: 2px solid var(--tertiary-color);
-
-    @media screen and (max-width:600px) {
-        flex-direction: column;
-       }
 
     .contact-info{
         font-family: var(--font-family-secondary);
         font-size: var(--paragraf-size);
         color: var(--secondary-color);
+
+        @media screen and (max-width:600px) {
+            font-size: var(--paragraf-size);
+           }
       
         li {
             list-style: none;
@@ -585,10 +586,6 @@ footer {
         font-size: var(--paragraf-size);
         color: var(--secondary-color);
         text-align: right;
-
-        @media screen and (max-width:600px) {
-            text-align: left;
-           }
 
         ul {
             list-style: none;
